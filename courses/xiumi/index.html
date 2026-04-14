@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秀米基础 - 概设教程</title>
+    <link rel="stylesheet" href="./style-nav.css">
+    <link rel="stylesheet" href="./style-content.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container" id="nav-container">
+            <div class="nav-brand" id="nav-brand">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link brand">
+                        <div class="item-txt brand" >
+                            <span>TANEI</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>塔内主站</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./department/gaishe/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>概设部主页</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown menu course">
+                    <a href="./department/gaishe/coures.html" class="nav-link dropdown menu course">
+                        <div class="item-txt menu course" >
+                            <span>概设教程</span>
+                            <span class="icon-png dropdown" ></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <ul class="dropdown-item">
+                            <a href="../xiumi/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>秀米排版</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(1)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps2/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(2)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps3/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(3)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../pr1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PR基础(1)</span></div>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item about">
+                    <a href="./department/gaishe/about.html" class="nav-link menu about">
+                        <div class="item-txt menu" >
+                            <span>关于</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-more">
+                <div class="nav-item more">
+                    <a class="nav-link more">
+                        <div class="item-txt more"><span>More</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content-container">
+        <aside class="tocbar">
+            <div class="toc-header">
+                <h2 class="header">秀米基础</h2>
+            </div>
+            <nav class="toc-item">
+                <a href="#section1" class="toc-link">1. 开始</a>
+                <div class="toc-subitem">
+                    <a href="#section1.1" class="toc-link">准备工作</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section1.2" class="toc-link">认识界面</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section2" class="toc-link">2. 简单排版</a>
+                <div class="toc-subitem">
+                    <a href="#section2.1" class="toc-link">添加文字</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.2" class="toc-link">添加图片</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.3" class="toc-link">使用布局盒子排版</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section3" class="toc-link">3. 使用模板</a>
+                <div class="toc-subitem">
+                    <a href="#section3.1" class="toc-link">使用卡片模板装饰文字</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.2" class="toc-link">使用卡片模板装饰图片</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.3" class="toc-link">其他小组件模板</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section4" class="toc-link">4. 套用样刊模板</a>
+                <div class="toc-subitem">
+                    <a href="#section4.1" class="toc-link">挑选样刊模板</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.2" class="toc-link">使用样刊模板排版</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section5" class="toc-link">5. 其他内容</a>
+                <div class="toc-subitem">
+                    <a href="#section5.1" class="toc-link">编辑部件属性</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section5.2" class="toc-link">添加跳转链接</a>
+                </div>
+                <p class="bottom blank"></p>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <h1>秀米基础</h1>
+                <p>从注册到发布，使用秀米完成一篇基础公众号图文排版</h3>
+                <div class="download-item">
+                    <img src="media/main-content/download/download.svg">
+                    <p><a href="material/material_xiumi.zip" download="" class="download-link">下载配套素材(zip)</a></p>
+                </div>
+            </header>
+            <div class="section-main">
+                <div class="section" id="section1">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2 class="section-intro">开始</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section1.1">
+                            <h2>准备工作</h2>
+                            <p>首先需要注册并登录秀米账号，访问<a href="https://xiumi.us/#/" target="_blank" rel="noopener noreferrer">秀米官网 https://xiumi.us/#/</a>。</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/xiumihome1.png">
+                            </div>
+                            <p class="footnote">秀米官网首页</p>
+                            <p>登录后，在首页点击“<span class="emphasis">新建一个图文</span>”来创建新项目。</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/xiumihome2.png">
+                            </div>
+                            <p class="footnote">创建新图文项目</p>
+                        </div>
+                        <div class="section-txt" id="section1.2">
+                            <h2>认识界面</h2>
+                            <p>新建项目后进入编辑界面。主要分为三个区域：左侧的素材区，中间的编辑区，以及右侧的预览区（模拟手机端推文效果）。</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface1.png">
+                            </div>
+                            <p class="footnote">编辑区和对应的推文区域</p>
+                            <p>在编辑区输入文字时，会弹出文字工具栏，用于调整字体、颜色、大小、对齐方式等。</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface2.png">
+                            </div>
+                            <p class="footnote">输入文字时弹出的文字工具栏</p>
+                            <p>最上方是选项栏，包含保存、预览、导出、设置等核心功能。</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface3.png">
+                            </div>
+                            <p class="footnote">最上方的选项栏</p>
+                            <p>点击“我的秀米”可以查看和管理你所有的图文项目。</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface4.png">
+                            </div>
+                            <p class="footnote">“我的秀米”界面</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section2">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2 class="section-intro">简单排版</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section2.1">
+                            <h2>添加文字</h2>
+                            <p>在编辑区直接点击即可输入文字。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/txt1.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>也可以从Word文档中复制粘贴大量文字，或者点击工具栏的“导入word”按钮直接导入。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/txt2.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>输入文字后，可以使用弹出的工具栏调整文字的<span class="emphasis">样式</span>，如字体、大小、颜色、对齐等。</p>
+                        </div>
+                        <div class="section-txt" id="section2.2">
+                            <h2>添加图片</h2>
+                            <p>首先，将图片上传到左侧的素材区。点击素材区的“我的图库”，然后点击“上传图片”。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/img1.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>上传后，在编辑区单击要插入图片的位置，然后在素材区点击对应的图片，即可插入。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/img2.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                        <div class="section-txt" id="section2.3">
+                            <h2>使用布局盒子排版</h2>
+                            <p>要使用更复杂的排版，需要打开编辑区右上角的“<span class="emphasis">布局模式</span>”。在此模式下，正文内容被看作由一个个“组件”（如文字组件、图片组件）依次排列组成的“大盒子”。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/box1.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>在右侧的“图文模板” -> “布局” -> “基础布局”中，有各种预设的布局“盒子”（如左右分栏、上下分栏）。将这些盒子拖动到编辑区即可插入。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/box2.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>要在已有文段中插入盒子，需要先<span class="emphasis">拆分文段</span>。单击要拆分的位置，在弹出工具栏中点击“拆分文段”按钮。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/box3.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>拆分后，将布局盒子拖到两个文段组件之间（注意蓝色提示线），即可插入。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/box4.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>在盒子的各个分区内，可以像在普通编辑区一样输入文字或拖入图片。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/box5.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>布局盒子支持嵌套。例如，一个左右对分的“二分盒子”里，可以再放入一个“自由布局”盒子。“自由布局”盒子需要点击“编辑”进入单独编辑区，可以像PPT一样自由拖放文本框和图片。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/box6.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2 class="section-intro">使用模板</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section3.1">
+                            <h2>使用卡片模板装饰文字</h2>
+                            <p>方法一：先从右侧模板区（“图文模板”->“卡片”）拖动一个空卡片到编辑区，然后在卡片内输入文字。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct3/model1.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>方法二：更快捷的方式是，先选中编辑区已有的文字，然后点击右侧模板区的某个卡片，即可将文字直接“套用”到该卡片样式中。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct3/model2.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                        <div class="section-txt" id="section3.2">
+                            <h2>使用卡片模板装饰图片</h2>
+                            <p>对于空卡片，可以直接将图片拖入卡片的分区中。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct3/model3.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>对于自带示例图片的卡片模板，可以点击卡片上原有的图片，然后在弹出的工具栏中点击“替换”按钮，选择自己的图片进行替换。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct3/model4.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                        <div class="section-txt" id="section3.3">
+                            <h2>其他小组件模板</h2>
+                            <p>秀米还提供了许多实用的小组件，如分割线、结束线、“关注我们”提示、二维码容器等。直接从右侧模板区拖动到编辑区即可使用。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct3/model5.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section4">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2 class="section-intro">套用样刊模板</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section4.1">
+                            <h2>挑选样刊模板</h2>
+                            <p>要快速制作一篇完整的推文，可以套用他人已制作好的完整“样刊”模板。返回秀米首页，点击“<span class="emphasis">挑选风格排版</span>”。</p>
+                            <p>在模板市场中，可以利用上方筛选条件（务必勾选“免费”）找到心仪的模板，点击进入预览，然后点击“<span class="emphasis">另存给自己</span>”。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct4/template1.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                        <div class="section-txt" id="section4.2">
+                            <h2>使用样刊模板排版</h2>
+                            <p>打开另存后的样刊，其已具备完整的文章结构（标题、正文、图片位、分割线等）。你只需要根据自己的内容规划，保留或删除不需要的板块。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct4/template2.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>接下来，用你自己的文字和图片替换模板中的原有内容。直接点击模板中的文字进行修改，或点击图片进行替换。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct4/template3.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p>编辑过程中，可随时点击上方工具栏的“预览”按钮查看最终效果。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct4/template4.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section5">
+                    <div class="section-header">
+                        <div class="section-number">5</div>
+                        <h2 class="section-intro">其他内容</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section5.1">
+                            <h2>编辑部件属性</h2>
+                            <p>选中任意组件（文字、卡片、形状等），在右侧的“工具栏”或“图层”面板中，可以修改其属性，例如更换背景颜色、边框颜色等。</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct5/recolor.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                        <div class="section-txt" id="section5.2">
+                            <h2>添加跳转链接</h2>
+                            <p>可以为文字或图片添加超链接。选中目标文字或图片，在弹出的工具栏中找到“<span class="emphasis">点击动作</span>”（手形图标），点击后，在右侧面板的“链接”输入框中填入目标网址即可。</p>
+                            <p>（此功能常用于添加“往期文章”跳转链接。）</p>
+                            <div class="video-container">
+                                <video controls class="zoomable-video" onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct5/links.mp4" type="video/mp4">
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="bottom blank"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 从文档1中复制的JS交互脚本
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.toc-item a');
+        const sections = document.querySelectorAll('.section');
+        // 点击事件处理
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        // 使用Intersection Observer API进行更精确的检测
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // 调整触发区域
+            threshold: 0
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+    function toggleZoom(img) {
+        img.classList.toggle('zoomed');
+    }
+    function toggleVideoSize(video) {
+        // 检查点击的是否是视频控件
+        const isControlClick = event.target === video && 
+            (event.offsetY > video.clientHeight - 50); // 假设控件高度约50px
+        
+        if (isControlClick) {
+            // 如果是点击控件，不处理缩放，让浏览器处理播放控制
+            return;
+        }
+        
+        // 点击视频主体，进行缩放
+        const isZoomed = video.classList.contains('zoomed');
+        const parent = video.parentElement;
+        if (isZoomed) {
+            // 缩小
+            video.classList.remove('zoomed');
+            video.style.cursor = 'pointer';
+            parent.classList.remove('zoomed');
+        } else {
+            // 放大
+            video.classList.add('zoomed');
+            video.style.cursor = 'default';
+            parent.classList.add('zoomed');
+        }
+        // 阻止事件冒泡，避免重复触发
+        event.stopPropagation();
+    }
+</script>
+</html>
