@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>概设教程总站 | TANEI</title>
+    <link rel="stylesheet" href="./style-nav.css">
+    <link rel="stylesheet" href="./style-content.css">
+    <style>
+        /* 为主页内容区域添加额外样式 */
+        .tutorials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .tutorial-card {
+            background: var(--shallow-background);
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(43, 153, 231, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        .tutorial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(43, 153, 231, 0.15);
+            border-color: var(--primary-color);
+        }
+        .tutorial-title {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 8px;
+        }
+        .tutorial-desc {
+            color: #666;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        .home-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .home-header h1 {
+            font-size: 2.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        .breadcrumb {
+            font-size: 1.1rem;
+            color: #888;
+            margin-bottom: 40px;
+        }
+        .breadcrumb a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 新增：分组标题样式 */
+        .tutorial-group {
+            margin-bottom: 50px;
+        }
+        .tutorial-group:last-child {
+            margin-bottom: 20px;
+        }
+        .group-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 导航栏保持不变，确保站点导航一致性 -->
+    <nav class="navbar" id="navbar">
+        <div class="container" id="nav-container">
+            <div class="nav-brand" id="nav-brand">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link brand">
+                        <div class="item-txt brand" >
+                            <span>TANEI</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>塔内主站</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./department/gaishe/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>概设部主页</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown menu course">
+                    <a href="./department/gaishe/coures.html" class="nav-link dropdown menu course">
+                        <div class="item-txt menu course" >
+                            <span>概设教程</span>
+                            <span class="icon-png dropdown" ></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <ul class="dropdown-item">
+                            <a href="../xiumi/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>秀米排版</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(1)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps2/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(2)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps3/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(3)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../pr1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PR基础(1)</span></div>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item about">
+                    <a href="./department/gaishe/about.html" class="nav-link menu about">
+                        <div class="item-txt menu" >
+                            <span>关于</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-more">
+                <div class="nav-item more">
+                    <a class="nav-link more">
+                        <div class="item-txt more"><span>More</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <!-- 左侧目录栏替换为本站指引 -->
+        <aside class="tocbar">
+            <div class="toc-header">
+                <h2 class="header">概设教程</h2>
+            </div>
+            <nav class="toc-item">
+                <a href="#tutorial-list" class="toc-link">全部教程</a>
+                <!-- 新增：分组子目录 -->
+                <div class="toc-subitem">
+                    <a href="#ps-series" class="toc-link">PS系列</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#pr-series" class="toc-link">PR系列</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#other-tutorials" class="toc-link">其他</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#about" class="toc-link">关于本站</a>
+            </nav>
+            <p class="bottom blank"></p>
+        </aside>
+
+        <!-- 主内容区改造为教程门户 -->
+        <div class="main-content">
+            <header class="home-header">
+                <h1>概设教程中心</h1>
+                <div class="breadcrumb">
+                    当前位置：<a href="./home/index.html">塔内主站</a> &gt; <a href="./department/gaishe/index.html">概设部</a> &gt; <strong>教程中心</strong>
+                </div>
+                <p>这里是塔内概设部的系列教程门户。我们提供从排版、图像处理到视频剪辑的完整设计工作流入门指南。选择下方课程开始学习。</p>
+            </header>
+
+            <div class="section-main">
+                <!-- 教程列表区域 -->
+                <div class="section" id="tutorial-list">
+                    <div class="section-header">
+                        <div class="section-number">A</div>
+                        <h2 class="section-intro">全部教程</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>以下是我们当前提供的所有教程，已按系列分类。点击任一卡片即可开始学习。</p>
+                        
+                        <!-- PS系列分组 -->
+                        <div class="tutorial-group" id="ps-series">
+                            <h3 class="group-title">PS系列</h3>
+                            <div class="tutorials-container">
+                                <!-- 教程卡片 2: PS基础(1) -->
+                                <a href="../ps1/index.html" class="tutorial-card">
+                                    <div class="tutorial-title">PS基础 (1)</div>
+                                    <p class="tutorial-desc">Photoshop 入门第一课。了解界面、基本工具、图层概念，以及如何完成简单的图像编辑与合成。</p>
+                                </a>
+                                
+                                <!-- 教程卡片 3: PS基础(2) -->
+                                <a href="../ps2/index.html" class="tutorial-card">
+                                    <div class="tutorial-title">PS基础 (2)</div>
+                                    <p class="tutorial-desc">深入 Photoshop 的核心功能。学习蒙版、通道、调色与滤镜，进行更复杂的图像处理和特效制作。</p>
+                                </a>
+                                
+                                <!-- 教程卡片 4: PS基础(3) -->
+                                <a href="../ps3/index.html" class="tutorial-card">
+                                    <div class="tutorial-title">PS基础 (3)</div>
+                                    <p class="tutorial-desc">高级技巧与实战。掌握智能对象、动作批处理、3D功能等，提升设计效率，应对专业项目需求。</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- PR系列分组 -->
+                        <div class="tutorial-group" id="pr-series">
+                            <h3 class="group-title">PR系列</h3>
+                            <div class="tutorials-container">
+                                <!-- 教程卡片 5: PR基础(1) -->
+                                <a href="../pr1/index.html" class="tutorial-card">
+                                    <div class="tutorial-title">PR基础 (1)</div>
+                                    <p class="tutorial-desc">Premiere Pro 视频剪辑入门。从创建项目、导入素材、时间线操作到简单效果与导出，完成你的第一个视频作品。</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- 其他分组 -->
+                        <div class="tutorial-group" id="other-tutorials">
+                            <h3 class="group-title">其他</h3>
+                            <div class="tutorials-container">
+                                <!-- 教程卡片 1: 秀米排版 -->
+                                <a href="../xiumi/index.html" class="tutorial-card">
+                                    <div class="tutorial-title">秀米排版</div>
+                                    <p class="tutorial-desc">学习如何使用秀米编辑器进行微信公众号、推文等内容的快速、美观排版。涵盖基础操作、组件使用和风格设定。</p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top: 40px; font-style: italic; color: #666;">更多教程正在筹备中，敬请期待...</p>
+                    </div>
+                </div>
+                
+                <!-- 关于本站区域 -->
+                <div class="section" id="about">
+                    <div class="section-header">
+                        <div class="section-number">B</div>
+                        <h2 class="section-intro">关于本站</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>本"概设教程"系列由 <strong>TANEI 塔内概设部和网络部</strong> 制作与维护，旨在为社团内外对设计感兴趣的同学提供一套系统、免费、易于上手的学习资源。</p>
+                        <p>教程内容涵盖平面设计（PS）、视频剪辑（PR）、内容排版（秀米）等常见设计工作流，从零开始，循序渐进。</p>
+                        <p>我们的目标是：</p>
+                        <ul>
+                            <li><strong>降低门槛</strong>：用清晰的步骤和示例，让设计新手也能快速入门。</li>
+                            <li><strong>体系化学习</strong>：课程安排由浅入深，帮助您构建扎实的设计基础。</li>
+                            <li><strong>即学即用</strong>：教程侧重于实战技能，学完后即可应用于社团工作或个人项目。</li>
+                        </ul>
+                        <p>如果在学习过程中有任何疑问或建议，欢迎通过概设部主页的联系方式与我们交流。</p>
+                        <p>祝您学习愉快！</p>
+                    </div>
+                </div>
+                
+                <p class="bottom blank"></p>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // 修改脚本以支持分组目录的点击高亮
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.toc-item a, .toc-subitem a');
+        const sections = document.querySelectorAll('.section, .tutorial-group');
+        
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px',
+            threshold: 0
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>
+</body>
+</html>
