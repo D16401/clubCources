@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR基础（1）-概设教程</title>
+    <link rel="stylesheet" href="./style-nav.css">
+    <link rel="stylesheet" href="./style-content.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container" id="nav-container">
+            <div class="nav-brand" id="nav-brand">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link brand">
+                        <div class="item-txt brand" >
+                            <span>TANEI</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>塔内主站</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./department/gaishe/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>概设部主页</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown menu course">
+                    <a href="./department/gaishe/coures.html" class="nav-link dropdown menu course">
+                        <div class="item-txt menu course" >
+                            <span>概设教程</span>
+                            <span class="icon-png dropdown" ></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <ul class="dropdown-item">
+                            <a href="../xiumi/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>秀米排版</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(1)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps2/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(2)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps3/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(3)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../pr1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PR基础(1)</span></div>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item about">
+                    <a href="./department/gaishe/about.html" class="nav-link menu about">
+                        <div class="item-txt menu" >
+                            <span>关于</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-more">
+                <div class="nav-item more">
+                    <a class="nav-link more">
+                        <div class="item-txt more"><span>More</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content-container">
+        <aside class="tocbar">
+            <div class="toc-header">
+                <h2 class="header">PR基础（1）</h2>
+            </div>
+            <nav class="toc-item">
+                <a href="#section1" class="toc-link">1.创建第一个项目</a>
+                <div class="toc-subitem">
+                    <a href="#section1.1" class="toc-link">创建新项目</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section1.2" class="toc-link">基本界面</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section2" class="toc-link">2.序列和素材导入</a>
+                <div class="toc-subitem">
+                    <a href="#section2.1" class="toc-link">导入外部媒体</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.2" class="toc-link">创建序列</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.3" class="toc-link">置入素材</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section3" class="toc-link">3.简单剪辑和工具</a>
+                <div class="toc-subitem">
+                    <a href="#section3.1" class="toc-link">选择工具和剃刀工具</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.2" class="toc-link">文字工具和图形工具</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.3" class="toc-link">波纹操作</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.4" class="toc-link">其他工具</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section4" class="toc-link">4.简单效果和关键帧</a>
+                <div class="toc-subitem">
+                    <a href="#section4.1" class="toc-link">不透明度（视频淡入/出）</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.2" class="toc-link">音量级别（音频淡入/出）</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.3" class="toc-link">简单色彩调整</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.4" class="toc-link">简单转场效果</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section5" class="toc-link">5.导出媒体</a>
+                <div class="toc-subitem">
+                <p class="bottom blank"></p>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <h1>PR基础（1）</h1>
+                <p>开始第一个项目，简单剪辑、选区和部分简单的工具<p>
+                <div class="download-item">
+                    <img src="media/main-content/download/download.svg">
+                    <p><a href="material/material_pr1.zip" download="" class="download-link">下载配套素材(zip)</a></p>
+                </div>
+            </header>
+            <div class="section-main">
+                <div class="section" id="section1">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2 class="section-intro">创建第一个项目</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt"  id="section1.1">
+                            <h2>创建新项目</h2>
+                            <p>启动PR，点击左侧的“新建项目”，在弹出的窗口中可以配置新项目的配置：</p>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/newObj1.png">
+                            </div>
+                            <p class="footnote">“新建项目”</p>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/newObj2.png">
+                            </div>
+                            <p class="footnote">配置新项目</p>
+                            <p>修改项目名，以及决定项目保存的目录</p>
+                            <p>创建项目后，会跳转到“导入”界面，暂时忽略此界面，点击右下角的“跳过”，进入编辑界面</p>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/newObj3.png">
+                            </div>
+                            <p class="footnote">跳过导入界面</p>
+                        </div>
+                        <div class="section-txt"  id="section1.2">
+                            <h2>基本界面</h2>
+                            <p>“编辑”界面是我们工作的主要界面，下面简单介绍各个面板的作用</p>
+                            <p>--时间线：主要编辑和工作的地方。时间线面板用于编辑“序列”，组织素材，得到的序列被导出后即成品视频</p>
+                            <p>--节目：配合时间线使用，显示当前时间轴所在处“序列”的画面</p>
+                            <p>--属性：显示当前“剪辑”的属性信息</p>
+                            <p>--项目：管理项目中的素材等</p>
+                            <p>--效果控件：调整当前“剪辑”应用的效果</p>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface1.png">
+                            </div>
+                            <p class="footnote">面板（1）：时间线、节目、属性、项目、效果控件</p>
+                            <P>当多个面板共用同一个视窗时，点击“>>”，查看视窗下未显示完全的面板</P>
+                            <p>--效果：提供预设的效果，拖动到对应“剪辑”上以应用</p>
+                            <p></p>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface2.png">
+                            </div>
+                            <p class="footnote">面板（2）：更多面板、效果</p>
+                            <p>可以右键（选中选项卡时也可以左键旁边的“≡”按钮）面板的选项卡，点击浮动面板，可以使该面板转移到一个单独的浮动窗口</p>
+                            <p>--历史记录：查看历史操作，可以撤回和取消撤回多个步骤</p>
+                            <P>--媒体浏览器：内置的文件浏览器，可以导入外部素材</P>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface3.png">
+                            </div>
+                            <p class="footnote">面板（3）：浮动面板、历史记录、媒体浏览器</p>
+                            <p>如果不小心关闭了某个还要用到的面板，点击上方“窗口”选项，在下拉菜单中选择对应的窗口重新打开</p>
+                            <p>--源监视器：预览原始的素材，可以提前打好标记，方便之后拖入时间线快速裁切出所需部分</p>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/interface4.png">
+                            </div>
+                            <p class="footnote">面板（5）：恢复被关闭的窗口、源监视器</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section2">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2 class="section-intro">序列和素材导入</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section2.1">
+                            <h2>导入外部媒体</h2>
+                            <p>导入外部媒体素材的方法有很多种，笔者常用的一种是右键项目面板，在弹出的菜单中选择“导入...”</p>
+                            <p>接着在文件浏览器中选择要导入的素材（或者装有多个素材的文件夹，导入后变成“素材箱”）</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/import1.png">
+                            </div>
+                            <p class="footnote">导入媒体素材</p>
+                            <p>另外也可以尝试从外部拖入文件到项目面板中（就像PS那样），或者在媒体浏览器中选择，或者在最开始跳过的“导入”页面中选择等等</p>
+                            <p>切换到列表视图，可以查看媒体素材的详细信息，素材很多时方便管理。素材箱只是文件夹的一个别名。</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/import2.png">
+                            </div>
+                            <p class="footnote">素材管理</p>
+                        </div>
+                        <div class="section-txt" id="section2.2">
+                            <h2>创建序列</h2>
+                            <p>点击新建项，选择序列，在弹出的窗口中选择和素材规格相符合的序列预设：分辨率1080p，帧率29.97fps</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/newSequence1.png">
+                            </div>
+                            <p class="footnote">新建序列</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/newSequence2.png">
+                            </div>
+                            <p class="footnote">新建序列的预设</p>
+                            <p>（新建序列也可以通过之前右键项目面板弹出菜单中的“序列”进行，类似导入操作，其他方法也很多）</p>
+                            <p>特别地，如果不清楚自己素材对应哪一种序列预设，可以直接将这个素材拖进空的时间线面板中，这样自动创建的一个序列，分辨率和帧率的规格就会和这个素材一样。</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/newSequence3.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">适应素材的新建序列</p>
+                            <p>你可以在项目面板中右击序列项目，选择“在时间轴中打开”，同时在时间线页面打开多个序列（不小心关闭，也可以这样重新打开）</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/newSequence4.png">
+                            </div>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/newSequence5.png">
+                            </div>
+                            <p class="footnote">在时间轴中打开序列</p>
+                        </div>
+                        <div class="section-txt" id="section2.3">
+                            <h2>置入素材</h2>
+                            <p>首先简单了解序列中的各个视频轨道音频轨道。当你置入相应的画面和音频，它们会进入相应的轨道。视频轨道从上到下有覆盖关系，音频轨道会同时输出</p>
+                            <p>"👀"眼睛按钮可以开启/关闭视频轨道的可见性，"M"按钮可以静音（Mute）音频轨道，"S"按钮可以仅保留（Solo）本音频轨道的输出（静音其他所有轨道）</p>
+                            <p>前面的"🔒"锁定按钮可以锁定本轨道，无法被编辑，防止误更改</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/place1.png">
+                            </div>
+                            <p class="footnote">序列中的轨道</p>
+                            <p>直接拖拽右边导入的素材到时间线上的序列，就可以把素材置入序列之中</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/place2.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">拖拽置入素材</p>
+                            <p>可以发现，置入的一段一段的素材变成了一个一个色块，一个色快称为一个“剪辑”（Clip），它们的“源”是对应素材的文件本身</p>
+                            <p>深入的说，我们并不是将素材本身的文件复制进了序列当中，而是创建了一个引用。一个剪辑记录了自己“源”文件的路径，以及入点和出点</p>
+                            <p>假设一个素材视频有10秒，它的一个剪辑，其记录的入点是源视频的第3秒，出点是第5秒，那么它就会在序列中引用源视频的第3-5秒，这个剪辑的长度就是2秒（显然，一个拖拽素材置入序列而创建的剪辑，默认入点是源的第0秒，出点是最后一秒）</p>
+                            <p>所以对这些“剪辑”块的操作都是非破坏性的，调整剪辑的长度就是在调整这个剪辑在“源”中的出点和入点。一个源文件可以被多个剪辑引用。</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/clip1.png">
+                            </div>
+                            <p class="footnote">剪辑和源文件</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2 class="section-intro">简单剪辑和工具</h2>
+                    </div>
+                    <div class="section-txt" id="section3.1">
+                        <h2>选择工具和剃刀工具</h2>
+                        <p>选择工具（V）：最常用的工具，即默认的鼠标。可以调整剪辑在轨道上的位置，在剪辑头部调整出点，在尾部调整入点</p>
+                        <p>剃刀工具（C）：将一个剪辑分割为两个剪辑。它们共享同样的“源”文件，分别有各自的出点和入点，互不干扰（当前为选择工具时，按Ctrl+K直接切开选中剪辑，Ctrl+Shift+K切开全部轨道上的剪辑）</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/tool1.png">
+                        </div>
+                        <p class="footnote">选择工具和剃刀工具</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/tool2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">分割剪辑和调整位置</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/tool3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">选择工具调整入点/出点</p>
+                        <p>上面的视频其实演示出了剪辑的本质，切开的剪辑不是一份素材的两半部分，而是一份素材的两段独立引用。通过调整入点和出点，它们有可能同时引用源素材的同一部分</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/tool4.png">
+                        </div>
+                        <p class="footnote">编辑剪辑的入点/出点（又被称为编辑工具，表现为红框箭头）</p>
+                    </div>
+                    <div class="section-txt" id="section3.2">
+                        <h2>文字工具（T）和图形工具</h2>
+                        <p>和PS类似，我们可以在序列中创建一个文字/图形的“图层”，只不过它们这次是一个有时间长度的剪辑</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/text&shape1.png">
+                        </div>
+                        <p class="footnote">文字工具和形状工具</p>
+                        <p>选择相应的文字/图形工具，在节目面板中点击即以当前时间轴为起点创建了一个对应的特殊剪辑，修改它们的长度可以改变图层的持续时间</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/text1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">用文字工具创建文本</p>
+                        <p>形状工具的逻辑也类似，这里不再赘述</p>
+                    </div>
+                    <div class="section-txt" id="section3.3">
+                        <h2>波纹操作</h2>
+                        <p>一般的删除，编辑剪辑的入点出点等改变剪辑长度的操作，可能产生空白（剪辑变短或被删除），使序列不连贯；或者占用额外的空间（剪辑变长），需要麻烦的整体移动</p>
+                        <p>“波纹”操作正是为了方便进行这些操作而设计出来的，它能让时间线像水波一样自动填补或腾出空间，保持序列始终紧凑连贯。</p>
+                        <p>“波纹操作”分为两种：</p>
+                        <p>--“波纹删除”：删除选中的素材后，后面的素材全部整体前移填补出现的空白区域</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/ripple1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">波纹删除</p>
+                        <p>--“波纹编辑工具”：编辑工具的“波纹”版本，编辑入点和出点时，当剪辑缩短则整体前移填补空白，变长则整体后移腾出空间</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/ripple2.png">
+                        </div>
+                        <p class="footnote">波纹编辑工具（B）</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/ripple3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">波纹编辑入点/出点</p>
+                    </div>
+                    <div class="section-txt" id="section3.4">
+                        <h2>其他工具</h2>
+                        查看时间线的工具：
+                        <p>--“手形工具（H）”：拖动时间线上的序列（等价于滑动下面的横轴）</p>
+                        <p>--“缩放工具（Z）”：缩放时间线的比例大小（等价于拖动改变下面的横轴的长度）</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/hand&zoom1.png">
+                        </div>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/hand&zoom2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">手形工具和缩放工具</p>
+                        快速选择：
+                        <p>--“向后/向前选择轨道工具”：快速选择后面/前面的所有剪辑，方便整体操作</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/after&before1.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section4">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2 class="section-intro">简单效果和关键帧</h2>
+                    </div>
+                    <div class="section-txt" id="section4.1">
+                        <p>关键帧用于标记“变化”开始/结束的时刻，关键帧之间，属性会发生动态的变化。下面通过两个例子简单了解关键帧的使用</p>
+                        <h2>不透明度（视频淡入/出）</h2>
+                        <p>不透明度是视频的属性之一，控制画面的可见性。通过不透明度+关键帧变化，可以实现画面逐渐出现（不透明度由0变成100）的效果</p>
+                        <p>在开头标记关键帧A，设置其不透明度为0，接着过几秒设置关键帧B，设置不透明度为100。这时软件就会自动生成中间这几秒不透明度逐渐变大的画面,表现为画面逐渐出现的淡入效果</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/opacity1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">不透明度+关键帧变化 实现淡入效果</p>
+                    </div>
+                    <div class="section-txt" id="section4.2">
+                        <h2>音量级别（音频淡入/出）</h2>
+                        <p>音量级别+关键帧变化，实现音频淡出效果，原理和上面的视频不透明度淡入效果类似，也是创建一前一后两个关键帧，让对应属性在不同参数之间过渡</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/volume1.png">
+                        </div>
+                        <p class="footnote">音量级别+关键帧变化，实现淡出效果</p>
+                    </div>
+                    <div class="section-txt" id="section4.3">
+                        <h2>简单色彩调整</h2>
+                        <p>下面介绍用Lumetri颜色面板调整视频画面的色彩</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/lumetri1.png">
+                        </div>
+                        <p class="footnote">Lumetri颜色面板</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/lumetri2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">调整画面饱和度</p>
+                    </div>
+                    <div class="section-txt" id="section4.4">
+                        <h2>简单转场效果</h2>
+                        <p>Pr自带的和第三方插件额外提供的效果有很多，这里用其中一个来进行演示</p>
+                        <p>在左下方视窗找到“效果”面板，点击视频过渡-Film Impact Animation-FI:Pull Motion Impacts（需要安装第三方插件Film Impact）</p>
+                        <p>将这个效果拖拽到两个素材中间，效果块会自动吸附到两者中间。点击这个效果块，可以在左上方视窗的效果控件面板中编辑这个效果的参数（持续时长，曲线等）</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/transition1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">简单转场效果</p>
+                    </div>
+                </div>
+                <div class="section" id="section5">
+                    <div class="section-header">
+                        <div class="section-number">5</div>
+                        <h2 class="section-intro">导出媒体</h2>
+                    </div>
+                    <div class="section-txt" id="section5.1">
+                        <h2>导出序列</h2>
+                        <p>在项目面板找到要导出的序列，右键然后在菜单中选择导出媒体，预设选择匹配源"Match Source - Adaptive High Bitrate"，格式选择H.264，即可导出序列内容为mp4格式的视频</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct5/export1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">导出媒体</p>
+                    </div>
+                </div>
+                <p class="bottom blank"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.toc-item a');
+        const sections = document.querySelectorAll('.section');
+        // 点击事件处理
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        // 使用Intersection Observer API进行更精确的检测
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // 调整触发区域
+            threshold: 0
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+    function toggleZoom(img) {
+        img.classList.toggle('zoomed');
+    }
+    function toggleVideoSize(video) {
+        // 检查点击的是否是视频控件
+        const isControlClick = event.target === video && 
+            (event.offsetY > video.clientHeight - 50); // 假设控件高度约50px
+        
+        if (isControlClick) {
+            // 如果是点击控件，不处理缩放，让浏览器处理播放控制
+            return;
+        }
+        
+        // 点击视频主体，进行缩放
+        const isZoomed = video.classList.contains('zoomed');
+        const parent = video.parentElement;
+        if (isZoomed) {
+            // 缩小
+            video.classList.remove('zoomed');
+            video.style.cursor = 'pointer';
+            parent.classList.remove('zoomed');
+        } else {
+            // 放大
+            video.classList.add('zoomed');
+            video.style.cursor = 'default';
+            parent.classList.add('zoomed');
+        }
+        // 阻止事件冒泡，避免重复触发
+        event.stopPropagation();
+    }
+</script>
+</html>
