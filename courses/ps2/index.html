@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS基础（2）-概设教程</title>
+    <link rel="stylesheet" href="./style-nav.css">
+    <link rel="stylesheet" href="./style-content.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container" id="nav-container">
+            <div class="nav-brand" id="nav-brand">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link brand">
+                        <div class="item-txt brand" >
+                            <span>TANEI</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>塔内主站</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./department/gaishe/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>概设部主页</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown menu course">
+                    <a href="./department/gaishe/coures.html" class="nav-link dropdown menu course">
+                        <div class="item-txt menu course" >
+                            <span>概设教程</span>
+                            <span class="icon-png dropdown" ></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <ul class="dropdown-item">
+                            <a href="../xiumi/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>秀米排版</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(1)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps2/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(2)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps3/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(3)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../pr1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PR基础(1)</span></div>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item about">
+                    <a href="./department/gaishe/about.html" class="nav-link menu about">
+                        <div class="item-txt menu" >
+                            <span>关于</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-more">
+                <div class="nav-item more">
+                    <a class="nav-link more">
+                        <div class="item-txt more"><span>More</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content-container">
+        <aside class="tocbar">
+            <div class="toc-header">
+                <h2 class="header">PS基础（2）</h2>
+            </div>
+            <nav class="toc-item">
+                <a href="#section1" class="toc-link">1.窗口使用技巧</a>
+                <div class="toc-subitem">
+                    <a href="#section1.1" class="toc-link">复位基本功能窗口</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section1.2" class="toc-link">窗口位置和布局</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section2" class="toc-link">2.图层上像素的编辑</a>
+                <div class="toc-subitem">
+                    <a href="#section2.1" class="toc-link">快速创建新图层</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.2" class="toc-link">前景色和背景色</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.3" class="toc-link">图层的锁定</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.4" class="toc-link">画笔和橡皮擦工具</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.5" class="toc-link">吸管工具</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.6" class="toc-link">合并图层</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section3" class="toc-link">3.蒙版和进阶选区</a>
+                <div class="toc-subitem">
+                    <a href="#section3.1" class="toc-link">图层蒙版</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.2" class="toc-link">剪切蒙版</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.3" class="toc-link">快速蒙版</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.4" class="toc-link">其他创建选区的工具</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section4" class="toc-link">4.后处理：色彩</a>
+                <div class="toc-subitem">
+                    <a href="#section4.1" class="toc-link">色彩基础知识</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.2" class="toc-link">色相/饱和度</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.3" class="toc-link">曲线</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.4" class="toc-link">混合通道器</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.5" class="toc-link">其他调整</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.6" class="toc-link">基于蒙版的局部处理</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section5" class="toc-link">5.进阶抠像</a>
+                <div class="toc-subitem">
+                    <a href="#section5.1" class="toc-link">提高对比度+选择主体</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section5.2" class="toc-link">通道+蒙版</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section5.3" class="toc-link">细节调整</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section3" class="toc-link">6.图层混合选项</a>
+                <div class="toc-subitem">
+                    <a href="#section6.1" class="toc-link">混合模式</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section6.2" class="toc-link">通道分离</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section6.3" class="toc-link">阴影效果</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section6.4" class="toc-link">发光效果</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section3" class="toc-link">7.其他后处理</a>
+                <div class="toc-subitem">
+                    <a href="#section7.1" class="toc-link">滤镜</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section7.2" class="toc-link">污点修复</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#sectionEX" class="toc-link">EX.钢笔进阶</a>
+            </nav>
+            <p class="bottom blank"></p>
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <h1>PS基础（2）</h1>
+                <p>窗口使用技巧，编辑图层像素，图像后处理：色彩基础和简单滤镜，复杂抠像，细节修复</p>
+                <div class="download-item">
+                    <img src="media/main-content/download/download.svg">
+                    <p><a href="material//material_ps2.zip" download class="download-link">下载配套素材(zip)</a></p>
+                </div>
+            </header>
+            <div class="section-main">
+                <div class="section" id="section1">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2 class="section-intro">窗口使用技巧</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt"  id="section1.1">
+                            <h2>复位基本功能窗口</h2>
+                            <p>有时我们会遇到不小心关闭右侧窗口的情况，要想重新调出这些窗口，可以点击上方<span class="emphasis">“窗口”</span>，在下拉菜单选择<span class="emphasis">“复位基本功能”</span>。复位基本功能可以直接还原第一次打开PS时的默认设置。</p>
+                            <p>如果只是想单独打开某个功能的窗口，也可以在下拉菜单中选择对应的选项，例如图层窗口不见了，那就在下拉菜单中选择“图层”</p>
+                            <div class="img"  onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/reset1.png">
+                            </div>
+                            <p class="footnote">复位基本功能窗口</p>
+                        </div>
+                        <div class="section-txt"  id="section1.2">
+                            <h2>窗口位置和布局</h2>
+                            <p>默认的窗口位置用着其实很不顺手，尤其是图层窗口和属性窗口，基本装不下里面的内容，常常需要我们手动拖动滚动条，查看起来十分麻烦</p>
+                            <p>此时我们可以通过自由拖动窗口把它们从默认布局中解放出来，可以自由调整位置和尺寸大小</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct1/window1.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">简单的拖动调整位置演示，现在图层和属性窗口不用挤在同一列，可以显示更多内容了</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct1/window2.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">进阶的布局操作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section2">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2 class="section-intro">图层上像素的编辑</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section2.1">
+                            <h2>快速创建新图层</h2>
+                            <p>如图，点击下方按钮，可以创建一个完全透明空白的图层</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/newLayer1.png">
+                            </div>
+                            <p class="footnote">创建新空白图层</p>
+                        </div>
+                        <div class="section-txt" id="section2.2">
+                            <h2>前景色和背景色</h2>
+                            <p>如图，右下角显示了当前的前景色和背景色</p>
+                            <p>（英文输入法）键盘按下D，恢复默认黑色前景色和白色背景色；按下X，交换当前前景色和背景色（助记Default和Exchange）</p>
+                            <p>直接点击会出现一个拾色器面板，可以在面板中选择颜色，也可以在当前画面中吸取</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/front_background1.png">
+                            </div>
+                            <p class="footnote">前景色和背景色及快捷键</p>
+                            <p>前景色和后景色可以用来快速填充图层和选区，下面的视频演示了对刚刚创建的新空白图层填充前景色和背景色像素，以及清除像素（填充为透明像素）的操作</p>
+                            <p>填充背景色：<span class="emphasis">Ctrl+Delete</span>；填充前景色：<span class="emphasis">Alt+Delete</span>；清除像素（只对选区生效，无选区时会直接删除整个图层）：直接<span class="emphasis">Delete</span></p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/front_background2.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">快速填充操作</p>
+                        </div>
+                        <div class="section-txt" id="section2.3">
+                            <h2>图层的锁定</h2>
+                            <p>图层的锁定能够防止我们误操作，避免把已经弄好的图层破坏</p>
+                            <p>如下图，从左到右依次为“锁定透明像素”，“锁定图像像素”“锁定位置”“防止自动嵌套”“锁定全部”</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/lock1.png">
+                            </div>
+                            <p class="footnote">锁定功能</p>
+                            <p>锁定透明像素：透明的像素不可被更改，其他像素可以</p>
+                            <p>锁定图像像素：所有像素都不可以更改</p>
+                            <p>锁定位置：图层不能被移动</p>
+                            <p>防止自动嵌套：图层移动时不会自动进入（嵌套进）其他画板（这个应该比较少用，可以忽略）</p>
+                            <p>锁定全部：禁止对此图层进行能够改变属性的操作</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/lock2.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">各类锁定的效果演示（不包括防止自动嵌套），关于画笔和橡皮擦的使用见后文</p>
+                        </div>
+                        <div class="section-txt" id="section2.4">
+                            <h2>画笔和橡皮擦工具</h2>
+                            <p>在上面图层的锁定中，使用了画笔和橡皮擦这个两个可以改变图层内像素的工具，下面介绍它们的具体作用</p>
+                            <p>画笔工具：这里介绍比较常用的两种：画笔和铅笔。</p>
+                            <p>画笔的笔迹会比较平滑，边缘有不透明的渐变过渡；而铅笔的笔迹一板一眼，笔迹只会出现前景色一种颜色，边缘没有减淡的过渡</p>
+                            <p>画笔的颜色就是前文提到的前景色</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/paintbrush1.png">
+                            </div>
+                            <p class="footnote">画笔工具</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/paintbrush2.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">画笔的边缘</p>
+                            <p>画笔工具可以在上方工具属性栏调整画笔粗细大小等属性。使用快捷键<span class="emphasis">“[”</span>缩小画笔，<span class="emphasis">“]”</span>放大画笔</p>
+                            <p>调整画笔的<span class="emphasis">硬度</span>可以调整笔迹边缘的清晰度（就像软毛笔的笔迹会晕开，硬钢笔笔迹更清晰分明）</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/paintbrush3.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">画笔大小和硬度</p>
+                            <p>调整画笔的<span class="emphasis">不透明度</span>和<span class="emphasis">流量</span>（流量可以理解成笔上的墨水量）可以得到更细腻的上色效果，控制<span class="emphasis">平滑度</span>可以画出更顺滑的曲线。铅笔也有不透明度和平滑，但没有流量</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/paintbrush4.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">画笔不透明度、流量和平滑</p>
+                            <p> </p>
+                            <p>橡皮擦工具和画笔工具十分类似，可以看作是画出“透明色”（或者背景色）的画笔</p>
+                            <p>橡皮擦在一般情况下会擦除原像素，原来的像素被替换成透明像素；如果目标图层处于锁定透明像素状态，那么原像素会被替换成背景色。</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/eraser1.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">橡皮擦工具擦出透明和背景色的机制</p>
+                            <p>橡皮擦也有类似画笔工具的画笔/铅笔模式，不透明度、流量、平滑等属性，这里不再赘述</p>
+
+                        </div>
+                        <div class="section-txt" id="section2.5">
+                            <h2>吸管工具</h2>
+                            <p>吸管工具可以提取出当前画面的颜色，并将它设置为当前的前景色。</p>
+                            <p>切换到吸管工具，在想要的颜色上点击左键直接吸取，而长按左键吸取时可以看到下图的圆环。</p>
+                            <p>上半部分是现在吸取并且将要替代当前前景色的颜色，下半部分是将要被替代的历史前景色</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/straw1.png">
+                            </div>
+                        </div>
+                        <div class="section-txt" id="section2.6">
+                            <h2>合并图层</h2>
+                            <p>将两个可见的图层合并成一个：同时多选要合并的图层，再点击右键选择合并图层；或者先分好组，再右键选择合并组</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/merge1.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">画笔不透明度、流量和平滑</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2 class="section-intro">蒙版和选区进阶</h2>
+                    </div>
+                    <div class="section-txt" id="section3.1">
+                        <h2>图层蒙版</h2>
+                        <p>图层蒙版是和一个图层绑定的特殊“图层”，它们大小位置和被绑定图层相同，根据自身的黑灰白控制被绑定图层的显示。黑色表示隐藏，中间的灰色表示不同程度的半透明，白色表示全显示</p>
+                        <p>如下图，先选中要添加蒙版的图层，再点击图层窗口下方按钮，即可为这个图层创建一个默认全白色的（即全显示）图层蒙版</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/mask.png">
+                        </div>
+                        <p class="footnote">创建图层蒙版</p>
+                        <p>下面的视频演示了图层蒙版的基本操作。创建选区然后给蒙版的这些特定区域填充黑色</p>
+                        <p>蒙版的逻辑就是想办法创造你要隐藏（显示）的选区，然后切换到蒙版这个特殊“图层”里，对应往选区里填充黑色（白色），你可以前景色填充，或者黑/白画笔直接画，或者形状工具搞一个黑/白矩形，方法很多</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/mask2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">图层蒙版的基本操作</p>
+                    </div>
+                    <div class="section-txt" id="section3.2">
+                        <h2>剪切蒙版</h2>
+                        <p>剪切蒙版是另外一种蒙版模式，它不像图层蒙版那样是一个依附式绑定的特殊图层，而是一种两个普通图层之间的限制显示关系。</p>
+                        <p>如下图，我们有两个图层，对上面这个图层右键，选择“创建剪切蒙版”。（快捷键，按住alt把鼠标移到在这个图层的选框附近，出现一个拐弯向下的箭头时点击即可创建）</p>
+                        <p>这时图层就会变成某种“剪切蒙版模式”，选择下方的正常图层作为自己的剪切蒙版，根据下方图层决定自己的像素是否显示</p>
+
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/cutting_mask1.png">
+                        </div>
+                        <p class="footnote">创建剪切蒙版</p>
+                        <p>剪切蒙版的原理如下：上方的图层B创建了剪切模板到下方的图层A，此时B中像素的显示就取决于下方图层A同样位置的像素是不是透明的。如果是，B的对应像素就显示，否则不显示</p>
+                        <p>通过剪切蒙版，我们可以限定上方的图层只在下方图层的范围内出现/起作用，而不影响到更下方的图层。</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/cutting_mask2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">剪切蒙版的基本操作</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/cutting_mask3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">一个更复杂的演示，跟着做体会一下或许能悟出点什么罢（</p>
+                    </div>
+                    <div class="section-txt" id="section3.3">
+                        <h2>快速蒙版</h2>
+                        <p>快速蒙版虽然也叫蒙版，但是它的核心逻辑不是作为一个蒙版盖住某个图层，它主要的功能是模仿蒙版黑掩白透的方式创建一个选区。它是一个用来创建选区的工具，配合上面的两个蒙版使用</p>
+                        <p>如下图，点击左下角这个按钮，进入快速蒙版模式</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/quick_mask1.png">
+                        </div>
+                        <p class="footnote">以快速蒙版模式编辑</p>
+                        <p>快速蒙版就是进入一个临时的蒙版，你用画笔或者其他方式在它上面涂抹（涂抹的区域会显示为红色），然后退出快速蒙版时，就会创建一个排除掉涂抹区域的选区</p>
+                        <p>如果要涂抹区域的选区，再对选区反选一下即可。这非常直观方便地让我们创建想要的选区，一般点进去用画笔工具涂抹就行了</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/quick_mask2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">用快速蒙版创建选区，进而创建图层蒙版</p>
+                    </div>
+                    <div class="section-txt" id="section3.4">
+                        <h2>其他创建选区的工具</h2>
+                        <p>下面介绍几个其他可以创建选区的工具：套索工具、魔棒工具和快速选择工具</p>
+                        <p>套索工具：非常简单，根据鼠标的轨迹来创建选区。主要用于小范围的微调，或者精度要求不高的选区创建</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/lasso1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">套索工具</p>
+                        <p>魔棒工具：依靠算法简单识别颜色相近的区域，可以调整容差，容差越大，精度越低。一般用来粗略地选择颜色相近的区域</p>
+                        <p>快速选择工具：最常用的工具，功能很强大，依靠算法自动识别选区边界。有“画笔大小”的概念，越小识别精度越高。正常是增加模式，快捷键Alt进入减少模式</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/quick_select1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">魔棒工具和快速选择工具</p>
+                    </div>
+                </div>
+                <div class="section" id="section4">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2 class="section-intro">后处理：色彩</h2>
+                    </div>
+                    <div class="section-txt" id="section4.1">
+                        <h2>色彩基础知识</h2>
+                        <p>如下图，ps的色彩有如下三种模式：RGB、HSB和CMYK</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/color1.png">
+                        </div>
+                        <p class="footnote">颜色窗口</p>
+                        <p>这三个模式分别从三个角度表示了一个颜色以什么方式混合出来：</p>
+                        <p>-RGB：R<span class="emphasis">红色浓度</span>；G<span class="emphasis">绿色浓度</span>；B<span class="emphasis">蓝色浓度</span>。即三个不同颜色的通道</p>
+                        <p>-HSB：H<span class="emphasis">颜色的种类</span>（色相）；S<span class="emphasis">颜料的浓度</span>（饱和度），0%S 表示0%当前颜色+100%白色，100%S 表示100%当前颜色+0%白色；B<span class="emphasis">混入的黑色浓度</span>（明度）</p>
+                        <p>-CMYK：C<span class="emphasis">青色浓度</span>；M<span class="emphasis">品红浓度</span>；Y<span class="emphasis">黄色浓度</span>；K<span class="emphasis">黑色浓度</span></p>
+                        <p>--RGB是光的混合，计算机算法处理图像一般用RGB，十六进制颜色代码就是以RGB表示的，例如#FFFFFF表示白色，#000000表示黑色。</p>
+                        <p>--HSB最符合人类的直觉，因此一般<span class="emphasis">建议使用HSB调色</span>。后面要讲到的调色很多也直接是调整HSB这三个属性</p>
+                        <p>--CMYK是油墨的混合，一般是打印印刷品时使用，一张图片被打印出来之前都要转成CMYK的表示才能被打印机等识别打印。</p>
+                        <p>总之，人类调HSB调出想要的颜色，计算机理解为RGB在屏幕上显示，要打印时又通过算法变成CMYK</p>
+                        <p>（创建一个ps项目时会要求设置色彩模式为RGB或CMYK，最后成品显示在屏幕上的选前者，要印出来的选后者）</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/color_note1.png">
+                        </div>
+                        <p class="footnote">偷来的一点理解</p>
+                        <span class="emphasis"></span>
+                    </div>
+                    <div class="section-txt" id="section4.2">
+                        <h2>色相/饱和度</h2>
+                        <p>色相/饱和度主要用于调整图片的HSB属性</p>
+                        <p>点击下方半圆形小按钮，在菜单中选择“色相/饱和度”，即可创建一个对应的调整图层</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/saturability1.png">
+                        </div>
+                        <p class="footnote">创建“色相/饱和度”调整图层</p>
+                        <p>这个图层是特殊的“调整图层”，可以对它之下的图层施加随时可以去除的可逆影响，不会破坏其他的图层</p>
+                        <p>对于现在这个“色相/饱和度”图层，它可以：改变图层所有像素的色相（HSB中的H：颜色的种类），饱和度（HSB中的S：颜色的浓度），以及明度（HSB中的B：黑色的浓度）</p>
+                        <p>通过调整这个图层的属性面板，我们可以控制它之下图层像素的HSB属性（不过这是全局统一的，单独对某区域的控制见后文）</p>
+                        <p>把这个图层想象成一个滤网，所有下面图层的像素，通过它之后，色相发生了n点左或右的偏移，饱和度加或减了m点，明度加或减了k点，所有的像素都发生了同样的HSB属性改变。</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/saturability2.png">
+                        </div>
+                        <p class="footnote">认识“色相/饱和度”的属性面板</p>
+                        <p>（进阶：下面那两条彩虹带，上面是原图输入的颜色，下面是映射后输出的颜色。例如上面的色带中红色的区域，在下面色带的同一个位置是黄色，说明原图的红色将会改变为黄色。）</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/saturability3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">全局的色相/饱和度调整图层（改变HSB）。可以对比一下开头和结尾的效果</p>
+                    </div>
+                    <div class="section-txt" id="section4.3">
+                        <h2>曲线</h2>
+                        <p>曲线主要用于调整区域内的对比度（对比度简而言之就是亮暗的差别，同一区域对比度低，意味着区域内的像素都很亮或者都很暗，糊成一团看不清细节）</p>
+                        <p>同样点击下方半圆小按钮，在菜单中选择曲线选项，即可创建一个曲线的调整图层。</p>
+                        <p>和色相/饱和度一样，是一个没有自己的内容的“滤网”，用于改变下方的图层</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/curves1.png">
+                        </div>
+                        <p class="footnote">创建“曲线”调整图层</p>
+                        <p>曲线的语境是RGB模式的。简单地说，它分别读取原像素像素RGB三个数字，然后经过曲线映射为新的另外的三个数字。</p>
+                        <p>例如某个像素的RGB是11，45，14，映射时算法就会查找11对应的a，45对应的b，14对应的c，输出的像素的RGB就会变成a，b，c。</p>
+                        <p>曲线就是个函数，那么上面的算法就可以理解为f(11)=a，f(45)=b，f(14)=c。默认情况下，曲线是直的f(x)=x，不改变任何像素的rgb</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/curves2.png">
+                        </div>
+                        <p class="footnote">“曲线”调整图层的属性面板</p>
+                        <p>讲了那么多，其实曲线没那么复杂，一般就是拉成一个S型曲线，让亮的更亮，暗的更暗，不至于亮暗太过相近，拉开图片的对比度，让细节更加清楚（反过来，拉一个反S曲线就可以拉低对比度）</p>
+                        <p>你可以根据个人喜好手动调整曲线，也可以使用上方的预设值，甚至直接按一下自动按钮，算法帮你搞定。</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/curves3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">全局的曲线调整图层（改变RGB）。可以对比一下开头和结尾的效果</p>
+                        <p>（进阶：曲线分4种模式，RGB、红、绿、蓝。RGB是对三个数字都执行一次f(x)映射，其他是只对RGB其中一个数字进行映射。所以后三者会改变原有的颜色）</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/curves4.png">
+                        </div>
+                        <p class="footnote">RGB、红、绿、蓝四种模式（仍然偷来的理解XD</p>
+                    </div>
+                    <div class="section-txt" id="section4.4">
+                        <h2>混合通道器</h2>
+                        <p>通道混合器的性质和上述两个差不多，依然是点击下方半圆小按钮创建的调整图层</p>
+                        <p>混合通道器的用法比较复杂，简单地说，它综合像素的RGB三个通道的数值，分别对三个通道各自输出一个新数值。</p>
+                        <p>混合通道器主要用于调色。这里有两个基本例子</p>
+                        <p>如果你要更多红（绿、蓝）的颜色，选择输出通道为红（绿、蓝），然后再下方红（绿、蓝）的色条拉高。更少就拉低（RGB原色）</p>
+                        <p>如果你要将绿色变为黄色，那么选择输出通道为红，拉高绿条，现在有更多的绿输出为红，那么原来的绿加上红就合成了黄（RGB合成色）</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/mixcolor.png">
+                        </div>
+                        <p class="footnote">偷来的理解v3</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/mixcolor2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">利用通道混合器调黄画面</p>
+                        <p>进阶:（并不）简单的说，它和曲线同样是一个函数，但它同时接受RGB的三个通道的数字x y z，结合面板滑块调出的三组a、b、c参数，各自输出线性组合ax+by+cz为三个通道的新数字，等式如下</p>
+                        <p>红通道：x输出=a红x输入+b红y输入+c红z输入</p>
+                        <p>绿通道：y输出=a绿x输入+b绿y输入+c绿z输入</p>
+                        <p>蓝通道：z输出=a蓝x输入+b蓝y输入+c蓝z输入</p>
+                        <p>如果你能理解这个线性组合，那通道混合器其实很简单，就是根据原来红绿蓝有多少乘上各自的系数，决定输出红绿蓝有多少。加上色彩合成知识就可以很细腻地调色</p>
+                        <p>（ps：嚯，我说学这线性代数真的有用啊（？</p>
+                    </div>
+                    <div class="section-txt" id="section4.5">
+                        <h2>其他调整</h2>
+                        <p>包括“亮度/对比度”、“曝光度”、“色阶”、“自然饱和度”等</p>
+                        <p>--“亮度/对比度”:调节亮度，调节明暗差异对比</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/light.png">
+                        </div>
+                        <p class="footnote">亮度/对比度</p>
+                        <p>--“曝光度”：曝光度调节亮暗，位移调节中间调，灰度系数矫正调节整体对比度</p> 
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/light2.png">
+                        </div>
+                        <p class="footnote">曝光度</p>
+                        <p>--“色阶”：拖动三个滑块，左到右分别是黑灰白，往左拖变暗往右拖变亮</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/light3.png">
+                        </div>
+                        <p class="footnote">色阶</p>
+                        <p>--“自然饱和度”：更加智能的饱和度调整，优先提升饱和度低的像素，对人物风景调色更自然</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/light4.png">
+                        </div>
+                        <p class="footnote">自然饱和度</p>
+                        <p>它们的绝大部分功能都可以被上述的“色相/饱和度”和“曲线”所替代，使用起来没有很复杂，效果比较直观，多尝试即可，不再赘述</p>
+
+                    </div>
+                    <div class="section-txt" id="section4.6">
+                        <h2>基于蒙版的局部处理</h2>
+                        <p>到此为止，我们介绍的都是对整个画面的调整，有没有什么办法只对某一个图层，只对图层的某一部分进行处理呢？这就要用到前面介绍的蒙版了。</p>
+                        <p>譬如，我希望让让裙子变成另一个颜色，但只调节色相会使整个画面变成诡异的颜色。这时，我们就需要修改调整图层旁边这个自带的默认全白的图层蒙版了。</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/partial1.png">
+                        </div>
+                        <p class="footnote">全局的调整不再适用</p>
+                        <p>这时，我们的思路就是创建一个选出裙子的选区，反选这个选区，然后在这个色相图层的图层蒙版中将这个选区填充为黑色。图层蒙版就会变成裙子区域是白色，非裙子区域是黑色</p>
+                        <p>通过这个操作，这个调节色相的效果就只会显示在裙子上，而其他部分不会显示</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/partial2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">用图层蒙版限制色相调整层的作用范围</p>
+                        <p>到了这一步，我们基本实现了在画面的局部应用效果。然而，简单的快速蒙版只有一板一眼的黑白、显示和不显示，这会导致画面颜色的突变，产生割裂感</p>
+                        <p>我们希望这个调整图层能够融入画面，这时就需要柔和模糊蒙版黑白分界线的边缘。下面演示使用高斯模糊滤镜模糊蒙版边缘，实现柔和过渡</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/partial3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">高斯模糊滤镜模糊蒙版边缘，实现柔和过渡</p>
+                        <p>Alt+左键点击蒙版图层，可以单独查看蒙版内部的情况。可以发现应用高斯模糊后，黑白边界确实变得模糊了。</p>
+                        <p>至此，我们就将一个局部应用的效果较好地融入了画面中。这个插画调色的例子中还有几个类似的操作，不妨一试：</p>
+                        <p>--对人物的脸部手部等皮肤进行局部的 自然饱和度 调整，使之变得更加有血色和红润</p>
+                        <p>--点击上方的“选择”->“色彩范围”->“选择”->“高光”，创建选出高光的区域，然后应用通道混合器把光线调黄</p>
+                        <p>--点击上方的“选择”->“色彩范围”->“选择”->“阴影”，创建选出阴影的区域，然后应用通道混合器把阴影调蓝</p>
+                        <p>最终调色的效果如下图，以及原图对比</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/Prerita.png">
+                        </div>
+                        <p class="footnote">妙手回春啊大夫</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/contrast.png">
+                        </div>
+                        <p class="footnote">原图对比，以及所有用到的调整图层</p>
+                    </div>
+                </div>
+                <h1>未完待续...</h1>
+                </div>
+                <p class="bottom blank"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.toc-item a');
+        const sections = document.querySelectorAll('.section');
+        // 点击事件处理
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        // 使用Intersection Observer API进行更精确的检测
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // 调整触发区域
+            threshold: 0
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+    function toggleZoom(img) {
+        img.classList.toggle('zoomed');
+    }
+    function toggleVideoSize(video) {
+        // 检查点击的是否是视频控件
+        const isControlClick = event.target === video && 
+            (event.offsetY > video.clientHeight - 50); // 假设控件高度约50px
+        
+        if (isControlClick) {
+            // 如果是点击控件，不处理缩放，让浏览器处理播放控制
+            return;
+        }
+        
+        // 点击视频主体，进行缩放
+        const isZoomed = video.classList.contains('zoomed');
+        const parent = video.parentElement;
+        if (isZoomed) {
+            // 缩小
+            video.classList.remove('zoomed');
+            video.style.cursor = 'pointer';
+            parent.classList.remove('zoomed');
+        } else {
+            // 放大
+            video.classList.add('zoomed');
+            video.style.cursor = 'default';
+            parent.classList.add('zoomed');
+        }
+        // 阻止事件冒泡，避免重复触发
+        event.stopPropagation();
+    }
+</script>
+</html>
