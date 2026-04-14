@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS基础（3）-概设教程</title>
+    <link rel="stylesheet" href="./style-nav.css">
+    <link rel="stylesheet" href="./style-content.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container" id="nav-container">
+            <div class="nav-brand" id="nav-brand">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link brand">
+                        <div class="item-txt brand" >
+                            <span>TANEI</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="./home/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>塔内主站</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./department/gaishe/index.html" class="nav-link menu">
+                        <div class="item-txt menu" >
+                            <span>概设部主页</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown menu course">
+                    <a href="./department/gaishe/coures.html" class="nav-link dropdown menu course">
+                        <div class="item-txt menu course" >
+                            <span>概设教程</span>
+                            <span class="icon-png dropdown" ></span>
+                        </div>
+                    </a>
+                    <div class="dropdown-content">
+                        <ul class="dropdown-item">
+                            <a href="../xiumi/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>秀米排版</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(1)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps2/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(2)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../ps3/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PS基础(3)</span></div>
+                            </a>
+                        </ul>
+                        <ul class="dropdown-item">
+                            <a href="../pr1/index.html" class="dropdown-link">
+                                <div class="dropdown-txt"><span>PR基础(1)</span></div>
+                            </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item about">
+                    <a href="./department/gaishe/about.html" class="nav-link menu about">
+                        <div class="item-txt menu" >
+                            <span>关于</span>
+                        </div>
+                    </a>
+                </li>
+            </div>
+            <div class="nav-more">
+                <div class="nav-item more">
+                    <a class="nav-link more">
+                        <div class="item-txt more"><span>More</span></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content-container">
+        <aside class="tocbar">
+            <div class="toc-header">
+                <h2 class="header">PS基础（3）</h2>
+            </div>
+            <nav class="toc-item">
+                <a href="#section1" class="toc-link">1.进阶抠像</a>
+                <div class="toc-subitem">
+                    <a href="#section1.1" class="toc-link">主体+选择并遮住</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section1.2" class="toc-link">通道辅助创建选区</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section1.3" class="toc-link">方法论/决策树</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section2" class="toc-link">2.简单的图层混合选项</a>
+                <div class="toc-subitem">
+                    <a href="#section2.1" class="toc-link">混合模式</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.2" class="toc-link">投影效果</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.3" class="toc-link">发光效果</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section2.4" class="toc-link">通道分离</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section3" class="toc-link">3.其他后处理</a>
+                <div class="toc-subitem">
+                    <a href="#section3.1" class="toc-link">滤镜和纹理</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section3.2" class="toc-link">污点修复和内容识别填充</a>
+                </div>
+            </nav>
+            <nav class="toc-item">
+                <a href="#section4" class="toc-link">4.矢量和钢笔进阶</a>
+                <div class="toc-subitem">
+                    <a href="#section4.1" class="toc-link">矢量的概念</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.2" class="toc-link">钢笔绘制复杂路径</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.4" class="toc-link">钢笔绘制形状</a>
+                </div>
+                <div class="toc-subitem">
+                    <a href="#section4.4" class="toc-link">钢笔路径描边</a>
+                </div>
+            </nav>
+            <p class="bottom blank"></p>
+        </aside>
+        <div class="main-content">
+            <header class="main-header">
+                <h1>PS基础（3）</h1>
+                <p></p>
+                <div class="download-item">
+                    <img src="media/main-content/download/download.svg">
+                    <p><a href="material/material_ps3.zip" download="" class="download-link">下载配套素材(zip)</a></p>
+                </div>
+            </header>
+            <div class="section-main">
+                <div class="section" id="section1">
+                    <div class="section-header">
+                        <div class="section-number">1</div>
+                        <h2 class="section-intro">进阶抠像</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt"  id="section1.1">
+                            <h2>主体+选择并遮住</h2>
+                            <p>主体+选择并遮住 适用于那些边缘复杂或半透明的物体，如毛发，烟雾，透明纱衣等</p>
+                            <p>先复制一份原始图层，防止不可逆破坏。关闭原来图层的可见，仅拷贝可见</p>
+                            <p>点击上方“选择”->“主体”，算法快速识别图片中的主体，并创建选区</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/mainbody1.png">
+                            </div>
+                            <p class="footnote">“选择”->“主体”</p>
+                            <p>此时可以看见猫猫主体已经被抠出。但是对于细长的毛发，却无法识别</p>
+                            <p>点击上方“选择”->“选择并遮住”，此时会进入一个特殊界面</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/mainbody2.png">
+                            </div>
+                            <p class="footnote">“选择”->“选择并遮住”</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct1/mainbody3.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">选择并遮住，涂抹边缘，净化颜色</p>
+                            <p>在左侧选择“调整边缘画笔工具”，然后在边缘处涂抹，涂出原来主体边缘没能选出的毛发等复杂边缘。</p>
+                            <p>接着在右侧面板最底下选择“净化颜色”，根据需要调整数量，这可以减少原来背景环境对边缘颜色的影响，使得抠出来的图像换到其他背景不会显得生硬</p>
+                        </div>
+                        <div class="section-txt"  id="section1.2">
+                            <h2>通道辅助创建选区</h2>
+                            <p>用通道分离背景和主体，适用于主体和背景颜色差异大，对比度强的图片。</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct1/channel1.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">通道辅助创建选区</p>
+                        </div>
+                        <div class="section-txt"  id="section1.3">
+                            <h2>方法论/决策树</h2>
+                            <p>下面总结一些抠图的方法论，并且给出一个抠图的改用什么工具决策树，仅供参考</p>
+                            <p>--提高对比：抠图的关键是精确创建选区，选出主体（背景）。利用PS自带的算法快速创建这样的选区，则需要突出主体和背景的对比度。前面所说的通道抠图就是从某个颜色出发提高这个对比创建出了选区，此外还可以用调整图层和滤镜等方法</p>
+                            <p>--分而治之：对于一个图像，对全局应用一种手段可能会造成顾此失彼的情况，无法一次性对整个图像应用一种方法就解决。这时采取分而治之的手法，先用钢笔或套索人工分割，再分别针对处理</p>
+                            <p>--人工修补：对于复杂的图像，算法没法做到尽善尽美，人工的修补有时不可避免</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct1/decisionmakingtree1.png">
+                            </div>
+                            <p class="footnote">决策树，仅供参考</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section2">
+                    <div class="section-header">
+                        <div class="section-number">2</div>
+                        <h2 class="section-intro">简单的图层混合选项</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="section-txt" id="section2.1">
+                            <p>图层混合选项包含了很多内容，这里指的是右键图层->“混合选项”打开的图层样式窗口里的内容，包括了混合选项和效果</p>
+                            <p>（双击图层也可以快速打开这个窗口）</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/mixture1.png">
+                            </div>
+                            <p class="footnote">右键图层->“混合选项”</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/mixture2.png">
+                            </div>
+                            <p class="footnote">图层样式窗口</p>
+                            <h2>混合模式</h2>
+                            <p>图层的混合模式决定了图层怎么和下方的图层做混合运算。一般图层的混合模式是“正常”，这时图层将会按照透明度覆盖下面的元素。将混合模式改为其他选项，可以得到很多有意思的效果</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/mixmodel1.png">
+                            </div>
+                            <p class="footnote">混合模式</p>
+                            <p>具体的算法逻辑很难直观解释，但基本分成上面这几组。同一组的具体作用类似，分别有什么区别难以论说，个人觉得多用多尝试才能建立直观印象。下面举一个正片叠底模式的例子</p>
+                            <p>复制我们之前抠出的立绘得到两份，对其中一个应用渐变映射得到一个较亮的部分，另一个应用正片叠底，补回较暗的部分</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/mixmodel2.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">混合模式-正片叠底</p>
+                            <p>另一个例子是差值模式，差值模式下的图层会减去下方图层的颜色，得到反色</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/mixmodel3.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">混合模式-差值</p>
+                            <p>混合模式的内容实在太多，总之多尝试，怎么好看怎么来（？</p>
+                        </div>
+                        <div class="section-txt" id="section2.2">
+                            <h2>投影效果</h2>
+                            <p>使用投影效果可以增加层次感，体现出上下图层的空间覆盖关系。如下图，投影是一种图层效果，简单调节这里的参数就可以</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/shade1.png">
+                            </div>
+                            <p class="footnote">投影效果的参数面板</p>
+                        </div>
+                        <div class="section-txt" id="section2.3">
+                            <h2>发光效果</h2>
+                            <p>和投影效果类似，不同之处在于它是向四周弥散的光效，而投影是一个方向的投影</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/glow1.png">
+                            </div>
+                            <p class="footnote">发光效果的参数面板</p>
+                        </div>
+                        <div class="section-txt" id="section2.4">
+                            <h2>通道分离</h2>
+                            <p>通道分离，意思是分离红绿蓝通道的属性，只显示某（一或二）个通道的颜色，利用这个可以做出一些单色剪影的效果</p>
+                            <p>勾选某一个通道，则保留这个通道的颜色，未被勾选的则归零。例如RGB(255,255,255)的像素，如果只勾选红色，则变成(255,0,0)</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/colorshift1.png">
+                            </div>
+                            <p class="footnote">混合选项-高级混合-通道</p>
+                            <p>下面演示了用这个分离通道的方法制作剪影</p>
+                            <div class="video-container">
+                                <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                    <source src="./media/main-content/sct2/colorshift2.mp4" type="video/mp4" >
+                                </video>
+                                <p class="tobezoomed">点击放大视频</p>
+                                <p class="zoomed">点击缩小视频</p>
+                            </div>
+                            <p class="footnote">分离原图层的某一通道，重新混合得到其他颜色</p>
+                            <p>利用这个方法还可以做出一些故障风的效果，如下图</p>
+                            <div class="img" onclick="toggleZoom(this)">
+                                <img src="./media/main-content/sct2/colorshift3.png">
+                            </div>
+                            <p class="footnote">故障风效果</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="section-header">
+                        <div class="section-number">3</div>
+                        <h2 class="section-intro">其他后处理</h2>
+                    </div>
+                    <div class="section-txt" id="section3.1">
+                        <h2>滤镜和纹理</h2>
+                        <p>相对于调整图层，滤镜基本上是不可逆的调整，而且功能更加丰富，例如之前实现柔和过渡用到的高斯模糊，还有模拟镜头模糊的光圈模糊，使模糊边缘更清晰的各种锐化等等</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct3/filter1.png">
+                        </div>
+                        <p class="footnote">滤镜菜单</p>
+                        <p>滤镜种类实在太多，而且有些十分复杂，笔者实力有限，这里介绍一个利用半调图案生成复古扫描线纹理的方法</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/texture1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">用半调图案滤镜生成扫描线纹理</p>
+                        <p>可见，滤镜可以用来对原图像进行调整，也可以生成风格化的纹理叠加在原图上。这块的用法实在无穷无尽，可以参考网上五花八门的其他教程</p>
+                        <p>另外从添加纹理的角度来说，这里的思路就是：从滤镜创建或者网上搜集到纹理图案，然后通过不透明度等前文提到的混合选项来添加这些纹理到原图之中。</p>
+                    </div>
+                    <div class="section-txt" id="section3.2">
+                        <h2>污点修复和内容识别填充</h2>
+                        <p>有时我们会遇到带有水印的或者有污点破坏的图像，这时我们需要抹除这些破坏原图的部分，猜测并修复被破坏的内容</p>
+                        <p>先介绍内容识别填充功能。创建选区选中要抹除的地方，右击选择“填充”，内容选择“内容识别”，算法会根据周围的内容填充选区内的内容</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/fill1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">内容识别填充</p>
+                        <p>接下来是污点修复画笔，在污点上面涂抹，就会自动识别周围的内容替换被涂抹的区域</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/fixbrush1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">污点修复画笔</p>
+                        <p>最后是修复画笔工具。关键点先是按住alt键选择要模仿的区域，另外调整画笔大小可以控制模仿的范围</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct3/fixbrush2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">修复画笔</p>
+                    </div>
+                </div>
+                <div class="section" id="section4">
+                    <div class="section-header">
+                        <div class="section-number">4</div>
+                        <h2 class="section-intro">矢量和钢笔进阶</h2>
+                        
+                    </div>
+                    <div class="section-txt" id="section4.1">
+                        <h2>矢量的概念</h2>
+                        <p>PS中的矢量是指点，线，曲线构成的路径和形状，它们不以像素为基本单位，放大后不会像一般的像素图层一样变糊而是保持清晰的边缘。就像初中信息课讲到的矢量图和位图的区别。</p>
+                        <p>之前介绍的钢笔工具画出的路径，形状工具生成的矩形圆形，文字工具创建的文字图层等，都是矢量对象。形状和文字可以被栅格化，用人话说就是变成普通的像素图，这时放大就会变模糊</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/vector1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">文字矢量和栅格化</p>
+                        <p>同理，形状工具生成的矩形圆形等也和文字类似，栅格化之后再放大就会变糊</p>
+                        <div class="img" onclick="toggleZoom(this)">
+                            <img src="./media/main-content/sct4/vector2.png">
+                        </div>
+                        <p class="footnote">矢量的放大和栅格化的放大</p>
+
+                        <p>既然矢量图有无损清晰放大这样优良的性质，为什么我们要栅格化它呢？这是因为我们用画笔，橡皮擦，或者选区等工具时，我们是直接修改图层的像素，这只对普通像素图有用，当我们选择矢量图进行这些操作时，会报错叫我们栅格化图层</p>
+                        <p>所以矢量可以帮我们快速创建图形，而要对他进行直接的像素修改，则需要进行栅格化（不可逆）</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/vector3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">栅格化后才能直接修改像素</p>
+                    </div>
+                    <div class="section-txt" id="section4.2">
+                        <h2>钢笔绘制复杂路径</h2>
+                        <p>之前抠图的时候介绍过钢笔的最简单用法，左键点击创建直线相连的锚点。钢笔其实还可以绘制曲线路径，左键长按则可以创建一个曲线锚点</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/pen1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">创建曲线锚点</p>
+                        <p>一些常用的操作：</p>
+                        <p>--钢笔工具模式下，在路径上悬停显示“+”，意思是在路径的该处添加一个锚点；</p>
+                        <p>--在已有的锚点上悬停显示“-”，意思是删除这个锚点；</p>
+                        <p>--按住alt切换成转换点工具，显示“ʌ”，意思是将某个锚点在直线和曲线之间切换（曲线会出现两侧的辅助手柄），单击变回直线，长按拖动即曲线</p>
+                        <p>--按住ctrl切换成直接选择工具，可以移动当前选中的实心蓝色的锚点；</p>
+                        <p>--路径选择工具会选择整个路径上的全部锚点，整体移动</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/pen2.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">锚点的操作</p>
+                        <p>曲线的绘制还有下面的操作，主要是控制两侧手柄实现不同的弯度</p>
+                        <p>按住ctrl时拖动手柄，两侧的手柄仍然保持在切线上；按住alt时拖动手柄，则可以脱离切线限制画出不平滑曲线</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/pen3.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">绘制曲线</p>
+                        <p>tips:绘制钢笔直线时，可以按住shift，这时路径会强制变成水平/竖直/45°斜向的直线</p>
+                    </div>
+                    <div class="section-txt" id="section4.3">
+                        <h2>钢笔绘制形状</h2>
+                        <p>将钢笔工具从路径模式切换为形状模式，则ps会根据钢笔画出的路径生成一个形状</p>
+                        <p>曲线的绘制还有下面的操作，主要是控制两侧手柄实现不同的弯度</p>
+                        <p>按住ctrl时拖动手柄，两侧的手柄仍然保持在切线上；按住alt时拖动手柄，则可以脱离切线限制画出不平滑曲线</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/penshape1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">钢笔绘制形状</p>
+                        <p>这种方式生成的形状基本上就是自定义形状工具，生成的对象都是矢量对象，如果要编辑它的像素也需要栅格化。</p>
+                    </div>
+                    <div class="section-txt" id="section4.4">
+                        <h2>钢笔路径描边</h2>
+                        <p>钢笔绘制的路径，可以用画笔描边等操作在图层上画出对应的像素。下面的例子本质上就是让画笔沿着路径画了一遍</p>
+                        <div class="video-container">
+                            <video controls  class="zoomable-video"  onclick="toggleVideoSize(this)">
+                                <source src="./media/main-content/sct4/pencurve1.mp4" type="video/mp4" >
+                            </video>
+                            <p class="tobezoomed">点击放大视频</p>
+                            <p class="zoomed">点击缩小视频</p>
+                        </div>
+                        <p class="footnote">用画笔描边路径</p>
+                    </div>
+                </div>
+                <p class="bottom blank"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.toc-item a');
+        const sections = document.querySelectorAll('.section');
+        // 点击事件处理
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        // 使用Intersection Observer API进行更精确的检测
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // 调整触发区域
+            threshold: 0
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+    function toggleZoom(img) {
+        img.classList.toggle('zoomed');
+    }
+    function toggleVideoSize(video) {
+        // 检查点击的是否是视频控件
+        const isControlClick = event.target === video && 
+            (event.offsetY > video.clientHeight - 50); // 假设控件高度约50px
+        
+        if (isControlClick) {
+            // 如果是点击控件，不处理缩放，让浏览器处理播放控制
+            return;
+        }
+        
+        // 点击视频主体，进行缩放
+        const isZoomed = video.classList.contains('zoomed');
+        const parent = video.parentElement;
+        if (isZoomed) {
+            // 缩小
+            video.classList.remove('zoomed');
+            video.style.cursor = 'pointer';
+            parent.classList.remove('zoomed');
+        } else {
+            // 放大
+            video.classList.add('zoomed');
+            video.style.cursor = 'default';
+            parent.classList.add('zoomed');
+        }
+        // 阻止事件冒泡，避免重复触发
+        event.stopPropagation();
+    }
+</script>
+</html>
